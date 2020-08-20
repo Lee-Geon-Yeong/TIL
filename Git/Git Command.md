@@ -54,3 +54,6 @@ github의 remote repo에 push하여 저장
 
 #### gitignore.io -> 개발할 때 불필요한 파일들은 깃허브에 업로드 하지 않음 
 
+#### 파이참에서 깃배쉬 설정하는 법 
+ctrl+alt+s 설정 진입 -> tools ->terminal -> C:\Program Files\Git\bin\bash.exe
+
