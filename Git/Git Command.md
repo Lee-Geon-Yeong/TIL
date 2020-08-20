@@ -52,3 +52,5 @@ commit사항 변경이력 확인
 
 github의 remote repo에 push하여 저장
 
+#### gitignore.io -> 개발할 때 불필요한 파일들은 깃허브에 업로드 하지 않음 
+
