@@ -57,3 +57,12 @@ github의 remote repo에 push하여 저장
 #### 파이참에서 깃배쉬 설정하는 법 
 ctrl+alt+s 설정 진입 -> tools ->terminal -> C:\Program Files\Git\bin\bash.exe
 
+#### 다른사람꺼 클론하는 법 
+code->다른사람꺼 주소 복사
+git clone https://github.com/StartBootstrap/startbootstrap-resume.git
+다른사람꺼의 리모트 주소를 삭제
+git remote remove origin
+내 리모트 주소로 연결
+git remote add origin https://github.com/Lee-Geon-Yeong/Lee-Geon-Yeong.github.io.git
+깃 푸쉬
+git push origin master
