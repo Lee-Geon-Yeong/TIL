@@ -40,6 +40,5 @@ vim 에디터를 사용하여 편집
 
 연습할 수 있는 사이트  [빔 어드벤처](https://vim-adventures.com/)
 
+![](command.assets/vi-vim-cheat-sheet-ko_spacewithyou.png)
 
-
-![road](command.assets/road.jpg)![road](../../../Users/i/Desktop/road.jpg)![](https://i.ytimg.com/vi/8qPONYR8n1o/maxresdefault.jpg)
