@@ -54,3 +54,62 @@ github의 remote repo에 push하여 저장
 
 #### gitignore.io -> 개발할 때 불필요한 파일들은 깃허브에 업로드 하지 않음 
 
+#### git pull origin master
+
+github의 오리진 마스터를 불러옴 
+
+#### github에서 다른 사람에게 협업 콜라보 요청 보내기
+
+settings-> manage access-> invite a collaborator
+
+#### git 과거버전으로 가기
+
+git checkout 과거버전해쉬값
+
+#### git 과거버전에서 다시 현재버전으로 가기
+
+git checkout master
+
+#### git 브랜치 목록 보여주기
+
+git branch
+
+#### git 브랜치 생성하기, 삭제하기
+
+git branch -c <branch name>
+
+git branch -d <branch name>
+
+#### git 브랜치 이동하기
+
+git switch <branch name>
+
+#### git 마스터에 브랜치에서 작업한 거 병합하기
+
+git switch master (먼저 master로 가서)
+
+git merge <합치고자하는 branch name>
+
+#### 상대방 branch 가져오기
+
+git pull origin <상대방 branch name>
+
+git fetch origin <상대방 branch name : branch name>feature_junehan:feature_junehan(Tab 이용)
+
+#### 브랜치 머지
+
+pull requests -> compare&pull request -> create pull request -> merge
+
+#### 깃 협업 프로젝트 하기
+
+1. 메인테이너 정하기
+2.  프로젝트 생성
+3. git init
+4. gitignore
+5. git add
+6. git commit
+7. git push
+
+
+
+1. 각자 프로젝트 하기
