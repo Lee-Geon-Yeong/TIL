@@ -54,6 +54,7 @@ github의 remote repo에 push하여 저장
 
 #### gitignore.io -> 개발할 때 불필요한 파일들은 깃허브에 업로드 하지 않음 
 
+<<<<<<< HEAD
 #### git pull origin master
 
 github의 오리진 마스터를 불러옴 
@@ -113,3 +114,17 @@ pull requests -> compare&pull request -> create pull request -> merge
 
 
 1. 각자 프로젝트 하기
+=======
+#### 파이참에서 깃배쉬 설정하는 법 
+ctrl+alt+s 설정 진입 -> tools ->terminal -> C:\Program Files\Git\bin\bash.exe
+
+#### 다른사람꺼 클론하는 법 
+code->다른사람꺼 주소 복사
+git clone https://github.com/StartBootstrap/startbootstrap-resume.git
+다른사람꺼의 리모트 주소를 삭제
+git remote remove origin
+내 리모트 주소로 연결
+git remote add origin https://github.com/Lee-Geon-Yeong/Lee-Geon-Yeong.github.io.git
+깃 푸쉬
+git push origin master
+>>>>>>> 63bcfcb97a4c6d0759fa9e006a0c29a8620959a8
