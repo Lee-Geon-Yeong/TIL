@@ -128,3 +128,5 @@ git remote add origin https://github.com/Lee-Geon-Yeong/Lee-Geon-Yeong.github.io
 깃 푸쉬
 git push origin master
 >>>>>>> 63bcfcb97a4c6d0759fa9e006a0c29a8620959a8
+
+git config --global core.autocrlf true
