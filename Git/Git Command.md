@@ -48,7 +48,7 @@ commit사항 변경이력 확인
 
 리모트 주소 잘못 적었을 경우 삭제하고 다시 추가해줘야 함
 
-#### git push origin master
+#### git push origin master or git push origin +master
 
 github의 remote repo에 push하여 저장
 
