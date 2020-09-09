@@ -8,7 +8,7 @@
 
 깃 상태 출력
 
-#### git add 파일명
+#### git add 파일명 
 
 스냅샷을 찍기 위해 무대에 올리는 작업.  working directory에 있는 것을 staging area로 추가
 
