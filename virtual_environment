@@ -3,4 +3,4 @@ select interpreter
 conda create -n iot python=3.7
 conda activate iot
 python -u "C:/경로"
-  
+    
