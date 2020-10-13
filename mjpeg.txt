@@ -1,0 +1,23 @@
+C:\Users\Administrator>cd C:\workspace\iot_web_service
+C:\workspace\iot_web_service>conda activate iot
+
+(iot) C:\workspace\iot_web_service>pip install django
+(iot) C:\workspace\iot_web_service>django-admin startproject mysite
+
+(iot) C:\workspace\iot_web_service>ren mysite iot
+
+(iot) C:\workspace\iot_web_service>cd iot
+
+(iot) C:\workspace\iot_web_service\iot>python manage.py startapp mjpeg
+
+창닫고 vs코드로 실행
+
+test01.html 실행->드로이드cam 실행->웹페이지 접속
+
+python manage.py runserver 0.0.0.0:8000
+
+(iot) C:\workspace\iot_web_service\iot>python manage.py shell
+>>> from mysite.usbcam import *
+>>> cam = USBCam()
+>>> jpg=cam.snapshot()
+>>> jpg
