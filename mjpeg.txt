@@ -21,3 +21,16 @@ python manage.py runserver 0.0.0.0:8000
 >>> cam = USBCam()
 >>> jpg=cam.snapshot()
 >>> jpg
+
+-------------------------------picam---------------------------
+picam을 연결하면 반드시 재부팅을 해주어야 함
+라즈베리파이에서 manage.py runserver 0.0.0.0:8000
+브라우저 주소창에 http://192.168.0.107:8000/mjpeg/ 입력
+ls /dev/vide* ->카메라 종류 보여주기 ->/dev/video0가 picam
+
+-----------
+raspberry 연결해서 들어가서 c드라이브 말고 raspberry 안으로 들어가서 작업해야함
+--------
+http://192.168.0.107:8000/kakao/login
+http://192.168.0.107:8000/mjpeg
+http://192.168.0.107:8000/kakao/talk
