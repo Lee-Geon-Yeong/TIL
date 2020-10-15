@@ -1,3 +1,7 @@
+#####no module error가 뜨는 경우는########
+-일반적으로 가상환경을 맞춰줘야 함. 가상환경 안에 들어있는 모듈이 포함되어 있을수도
+-import하고자 하는 클래스의 이름과 파일의 이름을 잘 보고 맞춰줘야함***중요
+
 C:\Users\Administrator>cd C:\workspace\iot_web_service
 C:\workspace\iot_web_service>conda activate iot
 
@@ -34,3 +38,10 @@ raspberry 연결해서 들어가서 c드라이브 말고 raspberry 안으로 들
 http://192.168.0.107:8000/kakao/login
 http://192.168.0.107:8000/mjpeg
 http://192.168.0.107:8000/kakao/talk
+
+---------------카카오톡 토큰은 6시간마다 갱신해줘야함--------------
+안그러면 오류뜸
+
+---------------카메라 실행 방법---------------
+raspberry로 mjpeg runserver 실행
+pc에서 odapi-ex02.py 실행
