@@ -1,0 +1,8 @@
+라즈베리파이에서 mosquitto 실행 시 명령어
+sudo /etc/init.d/mosquitto start
+
+mosquitto 구독 명령어
+mosquitto_sub -d -t hello/world
+
+mosquitto 발행 명령어
+mosquitto_pub -d -t hello/world -m "Hi!"
