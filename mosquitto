@@ -1,4 +1,11 @@
-Publisher <-> Broker <-> Subscriber
+# MQTT란
+IoT와 모바일 어플리케이션 등의 통신에 매우 적합한 프로토콜(최소한의 전력과 패킷량)
+Publisher <-> Broker(database) <-> Subscriber
+
+#QoS
+0 : 최대 1회 메세지를 보냄. 메세지 소실 될 수 있음
+1 : 최소 1회 메세지를 보냄. 메세지 중복 전송될 수 있음
+2 : 핸드쉐이킹 과정으로 메세지 보냄. 메세지 1회 보내는 것은 보장하지만 대신 성능이 감소함
 
 # Client
   MQTT의 broker에 연결된 모든 것
@@ -16,13 +23,39 @@ Publisher <-> Broker <-> Subscriber
 # Topic 
   MQTT의 topic은 (/)를 분리문자로 사용하여 폴더 및 파일과 유사한 계층 구조를 가진다
 
-
-
-# 라즈베리파이에서 mosquitto 실행 시 명령어
-sudo /etc/init.d/mosquitto start
-
 # mosquitto publish 명령어 : mosquitto_pub -h [브로커의 ip] -t [메시지 토픽] -m "[보낼 메시지]"
 mosquitto_pub -h 192.168.0.106 -t iot/test -m "Hi!"
 
 # mosquitto subscribe 명령어 : mosquitto_sub -h [브로커의 ip] -t [메시지 토픽]
 mosquitto_sub -h 192.168.0.106 -t iot/test
+
+# 라즈베리파이에서 mosquitto 실행 시 명령어
+sudo /etc/init.d/mosquitto start
+
+# Python에서 mqtt subscibe
+
+  import paho.mqtt.client as mqtt
+  # subscriber callback
+  # callback함수는 프로그램이 어떠한 이벤트가 발생하기를 계속 기다려야 하는 상황에서 쓰임
+  # 누군가에게 메세지를 받았을 때 실행하는게 callback 함수
+  def on_message(client, userdata, message):
+      print("message received ", str(message.payload.decode("utf-8")))
+      print("message topic=", message.topic)
+      print("message qos=", message.qos)
+      print("message retain flag=", message.retain)
+
+  broker_address="192.168.0.106"
+  client1=mqtt.Client("client1")
+  client1.connect(broker_address)
+  client1.subscribe("iot/test")
+  client1.on_message=on_message # 이 부분이 내가만든 함수를 콜백함수로 등록시키는 부분
+  client1.loop_forever()
+
+# Python에서 mqtt publish
+
+  import paho.mqtt.client as mqtt
+  mqttc=mqtt.Client("client2")
+  mqttc.connect("192.168.0.106", 1883)
+  mqttc.publish("iot/test", "hi iot!!")
+
+# 안드로이드에서 mqtt 
