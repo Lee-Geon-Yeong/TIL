@@ -1,8 +1,28 @@
-라즈베리파이에서 mosquitto 실행 시 명령어
+Publisher <-> Broker <-> Subscriber
+
+# Client
+  MQTT의 broker에 연결된 모든 것
+
+# Broker
+  서버와 클라이언트 사이의 중간 역할
+  모든 메세지를 수신, 필터링, 메시지 구독하는 사람 결정 클라이언트에게 메세지를 보내는 역할
+
+# Publish
+  topic을 지정하여 topic을 subscribe하고 있는 클라이언트에게 메세지를 보낸다
+  
+# Subscribe
+  topic을 구독하여 topic으로 publish된 메세지를 받는다
+  
+# Topic 
+  MQTT의 topic은 (/)를 분리문자로 사용하여 폴더 및 파일과 유사한 계층 구조를 가진다
+
+
+
+# 라즈베리파이에서 mosquitto 실행 시 명령어
 sudo /etc/init.d/mosquitto start
 
-mosquitto 구독 명령어
-mosquitto_sub -d -t hello/world
+# mosquitto publish 명령어 : mosquitto_pub -h [브로커의 ip] -t [메시지 토픽] -m "[보낼 메시지]"
+mosquitto_pub -h 192.168.0.106 -t iot/test -m "Hi!"
 
-mosquitto 발행 명령어
-mosquitto_pub -d -t hello/world -m "Hi!"
+# mosquitto subscribe 명령어 : mosquitto_sub -h [브로커의 ip] -t [메시지 토픽]
+mosquitto_sub -h 192.168.0.106 -t iot/test
