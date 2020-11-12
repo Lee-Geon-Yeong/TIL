@@ -1,0 +1,23 @@
+AT command
+
+  - AT : AT command 전송이 원할하게 이뤄지는지 확인합니다. 
+
+  - AT+GMR : esp8266의 현재 펌웨어 버전을 출력합니다. 
+
+  - AT+CWMODE? : esp8266의 모드를 출력합니다. 
+
+  - AT+CWMODE='mode num' : esp8266의 모드를 설정합니다. esp8266의 mode는 총 3가지입니다. 사용하고자 하는 모드에 따라 mode num을 넣어주시면 됩니다. 
+
+    이번 튜토리얼에서는 client로 사용할 것이기 때문에 1을 넣어주었습니다. 
+
+            1. Station : client 모드
+
+            2. AP : host 모드
+
+            3. Dual : client, host 모드
+
+   - AT+CWLAP : 주변에 존재하는 와이파이 신호 목록들을 출력합니다. 
+
+   - AT+CWJAP="SSID","Password" : SSID에 맞는 password를 가진 와이파이 공유기에 접속합니다. 
+
+   - AT+CWJAP? : 현재 esp8266에 연결된 와이파이 공유기를 출력합니다. 
