@@ -1,0 +1,31 @@
+Representational State Transfer
+
+Rest : HTTP에서 필요한 자원에 접근할 때 웹의 장점을 최대한 활용하기 위한 아키텍처
+
+* Rest API의 구성 요소
+ 1. HTTP Method
+  - get : 데이터 조회
+  - post : 새로운 데이터 추가
+  - put : 데이터 전체 수정
+  - patch : 데이터 일부 수정
+  - delete : 정보 삭제
+  
+ 2. URL - 데이터 접근
+ 
+ 3. Representation - 자원의 표현
+ 
+* Rest API 한글 설명
+ https://code.tutsplus.com/ko/tutorials/android-from-scratch-using-rest-apis--cms-27117
+ 
+* 안드로이드 Rest API 사용  
+ https://github.com/JStumpp/awesome-android
+  
+* Retrofit 사이트 
+ https://square.github.io/retrofit/
+ http://devflow.github.io/retrofit-kr/
+ 
+* postman 사이트 사용해서 json 데이터 주고받기
+ https://www.postman.com
+ 
+* rest api example site
+ https://jsonplaceholder.typicode.com/
