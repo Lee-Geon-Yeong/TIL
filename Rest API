@@ -1,13 +1,13 @@
 Representational State Transfer
 
 Rest : HTTP에서 필요한 자원에 접근할 때 웹의 장점을 최대한 활용하기 위한 아키텍처
-
+  
 * Rest API의 구성 요소  
  1. HTTP Method
   - get : 데이터 조회
   - post : 새로운 데이터 추가
   - put : 데이터 전체 수정
-  - patch : 데이터 일부 수정
+  - patch : 데이터 일부 수정  
   - delete : 정보 삭제
   
  2. URL - 데이터 접근
