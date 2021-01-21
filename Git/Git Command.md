@@ -101,6 +101,19 @@ git fetch origin <상대방 branch name : branch name>feature_junehan:feature_ju
 
 pull requests -> compare&pull request -> create pull request -> merge
 
+#### 깃 Large File Storage
+
+1. (해당 레포로 이동 후)
+git lfs install
+
+2. git lfs track "*.zip"
+
+3. git add .gitattributes
+git commit -m "update gitattributes for lfs"
+git push
+
+
+
 #### 깃 협업 프로젝트 하기
 
 1. 메인테이너 정하기
@@ -129,4 +142,4 @@ git remote add origin https://github.com/Lee-Geon-Yeong/Lee-Geon-Yeong.github.io
 git push origin master
 >>>>>>> 63bcfcb97a4c6d0759fa9e006a0c29a8620959a8
 
-git config --global core.autocrlf true
+git config --global core.autocrlf true 
