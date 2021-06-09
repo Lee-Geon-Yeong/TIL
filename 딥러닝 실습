@@ -18,6 +18,10 @@ AIBD                     /root/anaconda3/envs/AIBD
 # activate virtual environment
 $ conda activate AIBD
 
+# 버전 확인
+nvidia-smi -> 버전 11.2인지 11.1인지 확인, 파이토치에서 지원하는 안정적인 최신 버젼이 11.1
+
+
 # install pytorch -> 중요: cuda 버전 확인 후 진행하기
 (AIBD) $ conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
 
