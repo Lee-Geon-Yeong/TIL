@@ -1,3 +1,43 @@
 딥러닝 환경설정
 
-https://gist.github.com/Normalist-K/dd2af8ac9d7561d290e20732efbe5ca5
+# install anaconda
+$ wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+$ bash Anaconda3-2020.11-Linux-x86_64.sh
+
+# create virtual environment
+# conda create -n [가상환경이름] [설치할 패키지들]
+$ conda create -n AIBD python=3.8 jupyter notebook numpy scikit-learn matplotlib
+$ conda env list
+-------------------------------------------------
+conda environments:
+
+base                  *  /root/anaconda3
+AIBD                     /root/anaconda3/envs/AIBD
+--------------------------------------------------
+
+# activate virtual environment
+$ conda activate AIBD
+
+# install pytorch -> 중요: cuda 버전 확인 후 진행하기
+(AIBD) $ conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
+
+# setting kernel
+(AIBD) $ conda install notebook ipykernel
+(AIBD) $ python -m ipykernel install --user --name AIBD --display-name "AIBD"
+
+# start jupyter notebook
+(AIBD) $ jupyter notebook
+
+
+
+
+# 그 외 명령어
+
+# remove virtual environment
+$ conda remove -n [가상환경이름] --all
+
+# check installed packages
+$ conda list
+
+# deactivate virtual environment
+$ conda deactivate
