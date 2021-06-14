@@ -1,0 +1,4 @@
+시작하기전에 메모리 공간 충분한지 확인해줘야함
+jupyter 옆에 file 옆 running 들어가면 실행중인 거 종료해야함
+batch 사이즈 줄이면 해결됨
+$ nvidia-smi -l 5 -> 실행중인 GPU 확인
