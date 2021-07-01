@@ -1,0 +1,5 @@
+우분투에서 mp4->mov 변환
+
+$ sudo apt install ffmpeg
+
+$ ffmpeg -i 1234.mp4 -vcodec mjpeg -q:v 2 -acodec pcm_s16be -q:a 0 -f mov 1234Test.mov
