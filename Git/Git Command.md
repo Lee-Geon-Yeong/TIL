@@ -115,8 +115,6 @@ git lfs install
 git commit -m "update gitattributes for lfs"
 git push
 
-
-
 #### 깃 협업 프로젝트 하기
 
 1. 메인테이너 정하기
