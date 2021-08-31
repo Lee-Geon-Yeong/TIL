@@ -42,3 +42,6 @@ $ conda env export -n env_name > environment.yml
 #### Import
 $ conda env create -f environment.yml
 
+#### 싸피 가상환경
+$ python -m venv venv
+$ source venv/Scripts/activate
