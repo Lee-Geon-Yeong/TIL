@@ -1,0 +1,2 @@
+# requirements 업데이트
+pip freeze > requirements.txt
