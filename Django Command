@@ -15,3 +15,18 @@ $ django-admin startproject <project_name> .
 $ python manage.py startapp <app_name>
 
 # settings에서 장고 앱 추가
+
+
+
+
+1. 가상환경 생성
+2. 가상환경 활성화
+3. .gitignore, requirements.txt 생성
+(windows, venv, python, django)
+sqlite3 주석처리
+4. 장고 설치 및 패키지 설치
+pip install django 등등..
+5. pip freeze > requirements.txt
+6. django-admin startproject pjt06
+7. python [manage.py](http://manage.py/) startapp community, python [manage.py](http://manage.py/) startapp accounts
+8. settings에 app 등록
