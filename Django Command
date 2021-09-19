@@ -17,8 +17,7 @@ $ python manage.py startapp <app_name>
 # settings에서 장고 앱 추가
 
 
-
-
+# 프로젝트 진행 시 해야할 것
 1. 가상환경 생성
 2. 가상환경 활성화
 3. .gitignore, requirements.txt 생성
