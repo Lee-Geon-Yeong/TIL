@@ -1,0 +1,7 @@
+1. side project 저장소 만들기
+settings -> Manage access -> invite a collaborator -> 팀원들 초대
+바탕화면 폴더 생성 side-project
+side-project 내 gitbash -> git init, git .ignore 생성
+가상환경 생성 -> 활성화 -> 패키지 설치
+git 올리기
+settings -> branches -> 
