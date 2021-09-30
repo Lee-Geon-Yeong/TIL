@@ -5,3 +5,12 @@ side-project 내 gitbash -> git init, git .ignore 생성
 가상환경 생성 -> 활성화 -> 패키지 설치
 git 올리기
 settings -> branches -> 
+
+git branch feature/yelloiwsher
+git branch
+git switch feature/yellowisher
+
+작업 후
+git push origin feature/yellowisher
+
+프로젝트 github 메인 가서 compare&request
