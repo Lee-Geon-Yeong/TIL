@@ -28,5 +28,3 @@ pip install django 등등..
 6. django-admin startproject pjt06
 7. python [manage.py](http://manage.py/) startapp community, python [manage.py](http://manage.py/) startapp accounts
 8. settings에 app 등록
-
-
