@@ -8,6 +8,7 @@ $ pip install django
 # pip install django-extensions
 # pip freeze > requirements.txt
 or pip install -r requirements.txt
+
 # 장고 프로젝트 생성
 $ django-admin startproject <project_name> .
 
