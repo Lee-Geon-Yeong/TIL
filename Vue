@@ -1,0 +1,19 @@
+npm install -> pakage 있는 것들 설치하는 것
+
+npm i
+
+npm i lodash
+
+vuetify
+
+순서
+create 앱이름
+cd 현재폴더/
+vue add vuex
+npm run serve
+
+App.vue에서 hello와 image, components, style 지우기, component helloworld 지우기
+
+component에서 vue 생성하여 뼈대 구축
+
+App.vue에서 만든 vue import-> conponent 추가, template에서 사용
