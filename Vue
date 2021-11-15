@@ -17,3 +17,5 @@ App.vue에서 hello와 image, components, style 지우기, component helloworld 
 component에서 vue 생성하여 뼈대 구축
 
 App.vue에서 만든 vue import-> conponent 추가, template에서 사용
+
+
