@@ -22,7 +22,7 @@ $ python manage.py startapp <app_name>
 1. 가상환경 생성
 2. 가상환경 활성화
 3. .gitignore, requirements.txt 생성
-(windows, venv, python, django, visual studio)
+(windows, venv, python, django, visual studio code)
 sqlite3 주석처리
 4. 장고 설치 및 패키지 설치
 pip install django 등등..
